@@ -1,10 +1,10 @@
 /*
-Theme Name: Nucleare - WordPress.com
+Theme Name: Nucleare Gold - a minimal version of the wordpress Nucleare theme.
 Theme URI: https://wordpress.com/themes/nucleare/
-Description: Nucleare is a classic blog theme with a crisp, elegant design and plenty of handy features. A built-in search box, links to your favorite social networks, four widget areas, and beautifully styled post formats make this an ideal theme for your personal blog.
+Description: Nucleare Gold is a classic blog theme with a crisp, elegant design an minimal features. It also includes the Goldsmiths header and slide out menu
 Version: 1.0.3
-Author: CrestaProject
-Author URI: http://crestaproject.com
+Author: Goldsmiths and CrestaProject
+Author URI: http://www.gold.ac.uk
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: nucleare
@@ -499,7 +499,7 @@ textarea {
 a,
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #7fc7af;
+	color: #447677;
 	text-decoration: none;
 	transition: color .3s ease-in-out;
 }
@@ -1835,6 +1835,22 @@ object {
 .entry-gallery .tiled-gallery {
 	margin-bottom: 0;
 }
+
+
+/*-------------------------------------------
+Gold overrides
+---------------------------------------------*/
+.push-this {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    position: relative;
+    background-color: #FFF;
+}
+
+
+/*-------------------------------------------
+medya qurz
+---------------------------------------------*/
 
 @media all and (max-width: 1140px) {
 	.site-content,

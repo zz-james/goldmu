@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Nucleare
+ * @package Nucleare Gold
  */
 ?>
 

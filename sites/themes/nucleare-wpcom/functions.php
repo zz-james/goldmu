@@ -1,8 +1,8 @@
 <?php
 /**
- * nucleare functions and definitions
+ * nucleare gold functions and definitions
  *
- * @package Nucleare
+ * @package Nucleare Gold
  */
 
 if ( ! function_exists( 'nucleare_setup' ) ) :
@@ -44,6 +44,8 @@ endif; // nucleare_setup
 add_action( 'after_setup_theme', 'nucleare_setup' );
 
 
+
+
 /**
  * Register widget area.
  *
@@ -59,19 +61,27 @@ function nucleare_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
-
-
 }
 add_action( 'widgets_init', 'nucleare_widgets_init' );
+
+
+
+
 
 /**
  * Enqueue scripts and styles.
  */
 function nucleare_scripts() {
+	wp_enqueue_style( "gold", "http://www.gold.ac.uk/_assets/css/style-min.css" );
 	wp_enqueue_style( 'nucleare-style', get_stylesheet_uri() );
+    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-1.12.3.min.js', array(), null, true );
 	wp_enqueue_script( 'nucleare-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1', true );
 }
 add_action( 'wp_enqueue_scripts', 'nucleare_scripts' );
+
+
+
 
 
 function nucleare_modify_read_more_link() {

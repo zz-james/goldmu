@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package Nucleare
+ * @package Nucleare Gold
  */
 
 
@@ -19,9 +19,67 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'nucleare' ); ?></a>
+
+
+<!-- imported from gold -->
+
+
+  <div class="site-wrapper">
+
+    <header class="header header-container" role="banner">
+      <div id="skiptocontent"><a href="#maincontent">skip to main content</a></div>
+      <div class="wide-wrapper clearfix">
+      <a href="http://gold.ac.uk/" class="header__link"><h1 class="site-logo header__logo">Goldsmiths - University of London</h1></a>
+        <ul class="header__charms">
+          <li><a class="header__charm--text" href="#">Staff & students</a></li>
+          <li><a class="header__charm charm-search" href="http://www.gold.ac.uk/search-results/">Search</a></li>
+          <li><a class="header__charm charm-menu" href="#">Main menu</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+    <main id="content" role="main">
+      <div class="pusher-wrapper">
+
+        <section>
+          <h2 class="visuallyhidden">Navigation</h2>
+
+          <nav class="primary-nav pusher" role="navigation">
+            <h2 class="visuallyhidden">Primary navigation</h2>
+            <ul id="main-menu">
+              <li><span class="currentbranch0">Home</span></li>
+              <!-- navigation object : Main menu -->
+              <li id="loading">Loading</li>
+
+            </ul>
+          </nav>
+
+        </section>
+
+        <nav class="staff-students-nav pusher" role="navigation">
+          <h2 class="visuallyhidden">Staff + students navigation</h2>
+          <ul id="staff-menu">
+            <!-- navigation object : Main Nav number 2 -->
+              <li id="loading">Loading</li>
+          </ul>
+        </nav>
+
+        <div class="main-container push-this">
+          <div id="maincontent">
+
+
+<!-- above this line is imported from gold -->
+
+
+
+
+
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
@@ -31,7 +89,7 @@
 				</a>
 			<?php endif; // End header image check. ?>
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			<!-- <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>  -->
 		</div><!-- .site-branding -->
 	</header><!-- #masthead -->
 

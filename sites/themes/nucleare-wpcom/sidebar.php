@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package Nucleare
+ * @package Nucleare Gold
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

@@ -4,20 +4,10 @@
  *
  * Eventually, some of the functionality here could be replaced by core features
  *
- * @package Nucleare
+ * @package Nucleare Gold
  */
 
-/**
- * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
- *
- * @param array $args Configuration arguments.
- * @return array
- */
-function nucleare_page_menu_args( $args ) {
-	$args['show_home'] = true;
-	return $args;
-}
-add_filter( 'wp_page_menu_args', 'nucleare_page_menu_args' );
+
 
 /**
  * Adds custom classes to the array of body classes.
@@ -31,9 +21,16 @@ function nucleare_body_classes( $classes ) {
 		$classes[] = 'group-blog';
 	}
 
+	// add stuff from gold to make menu work
+	$classes[] = 'menu-closed';
+	$classes[] = 'staff-students-closed';
+	$classes[] = 'search-closed';
+
 	return $classes;
 }
 add_filter( 'body_class', 'nucleare_body_classes' );
+
+
 
 if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	/**
@@ -81,6 +78,9 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
 	}
 	add_action( 'wp_head', 'nucleare_render_title' );
 endif;
+
+
+
 
 /**
  * Sets the authordata global when viewing an author archive.

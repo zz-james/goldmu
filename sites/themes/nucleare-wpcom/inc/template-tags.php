@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package Nucleare
+ * @package Nucleare Gold
  */
 
 if ( ! function_exists( 'nucleare_paging_nav' ) ) :
