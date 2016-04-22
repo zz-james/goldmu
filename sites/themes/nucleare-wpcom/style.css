@@ -377,6 +377,11 @@ th {
 	font-weight: bold;
 }
 
+/* override for the gold.ac.uk style sheet we pull in */
+aside {
+    background-color: #fff;
+}
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
