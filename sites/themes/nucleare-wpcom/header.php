@@ -30,18 +30,9 @@
 
   <div class="site-wrapper">
 
-    <header class="header header-container" role="banner">
-      <div class="wide-wrapper clearfix">
-      <a href="http://gold.ac.uk/" class="header__link"><h1 class="site-logo header__logo">Goldsmiths - University of London</h1></a>
-        <ul class="header__charms">
-          <li><a class="header__charm--text" href="#">Staff & students</a></li>
-          <li><a class="header__charm charm-search" href="http://www.gold.ac.uk/search-results/">Search</a></li>
-          <li><a class="header__charm charm-menu" href="#">Main menu</a></li>
-        </ul>
-      </div>
-    </header>
-
-
+    <?php
+      get_template_part( 'partials/goldheader' );
+    ?>
 
     <main id="content" role="main">
       <div class="pusher-wrapper">
@@ -80,23 +71,9 @@
                   <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
                 </div>
 
-                <nav class="secondary-nav" role="navigation">
-                  <h2 class="visuallyhidden">Breadcrumb navigation</h2>
-                  <ul>
-                    <li class="expanded">
-                      <a href="/departments/">Departments</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
-                    </li>
-                    <li class="expanded">
-                      <a href="/computing/">Psychology</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
-                    </li>
-                    <li class="expanded">
-                      <a href="/computing/research/">Forensic Psychology Blog</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
-                    </li>
-                  </ul>
-                </nav>
+                <?php
+                  get_template_part( 'partials/breadcrumb' );
+                ?>
 
                 <a class="social-expand">Open social sharing</a><!-- new and some part removed -->
                 <div class="social-hubs-container">
