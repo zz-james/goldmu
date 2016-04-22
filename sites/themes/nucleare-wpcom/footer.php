@@ -16,6 +16,7 @@
 
 
 <!-- below this line is imported from gold -->
+</article>
           </div>
         </div>
       </div>

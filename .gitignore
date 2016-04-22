@@ -37,3 +37,5 @@ sites/uploads/
 sites/upgrade/
 sites/wp-cache-config.php
 
+#ignore as gridhost apache environment quite different
+.htaccess
