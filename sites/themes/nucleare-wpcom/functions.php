@@ -43,9 +43,6 @@ function nucleare_setup() {
 endif; // nucleare_setup
 add_action( 'after_setup_theme', 'nucleare_setup' );
 
-
-
-
 /**
  * Register widget area.
  *
@@ -66,8 +63,6 @@ add_action( 'widgets_init', 'nucleare_widgets_init' );
 
 
 
-
-
 /**
  * Enqueue scripts and styles.
  */
@@ -79,10 +74,6 @@ function nucleare_scripts() {
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery'), '1', true );
 }
 add_action( 'wp_enqueue_scripts', 'nucleare_scripts' );
-
-
-
-
 
 function nucleare_modify_read_more_link() {
 	return '<a class="more-link" href="' . esc_url( get_permalink() ) . '">' . __( 'Read More &raquo;', 'nucleare' ) . '</a>';

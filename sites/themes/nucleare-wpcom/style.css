@@ -16,6 +16,7 @@ Text Domain: nucleare
 1.0 Reset
 2.0 Typography
 3.0 Elements
+3.1 Overrides for styles loaded from gold.ac.uk
 4.0 Forms
 5.0 Navigation
 	5.1 Links
@@ -377,10 +378,37 @@ th {
 	font-weight: bold;
 }
 
-/* override for the gold.ac.uk style sheet we pull in */
+/*--------------------------------------------------------------
+3.1 overrides for the gold.ac.uk style sheet we pull in
+--------------------------------------------------------------*/
+
 aside {
     background-color: #fff;
 }
+
+.breadcrumb nav.secondary-nav > ul li > a {
+	font-size: 1.5rem;
+	line-height: 60px;
+	line-height: 6rem; // 1.5 rem on desktop
+}
+
+@media (min-width: 840px) {
+	.breadcrumb nav.secondary-nav > ul li > a {
+		font-size: 1.5rem;
+		line-height: 60px;
+		line-height: 1.5rem;
+	}
+}
+
+.dropdown-nav {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 60px;
+    line-height: 6rem;
+}
+
+
+
 
 /*--------------------------------------------------------------
 4.0 Forms

@@ -25,6 +25,20 @@
       jQuery( 'body' ).toggleClass( "menu-open" );
     });
   });
+
+  jQuery(".dropdown-nav, .dropdown-nav touchButton").click(function(e)
+  {
+      jQuery(".breadcrumb-wrapper").toggleClass("active");
+
+      setTimeout(
+        function() {
+          jQuery(".dropdown-nav .touchButton").toggleClass("active");
+          jQuery(".breadcrumb .secondary-nav").toggleClass("open");
+          jQuery(".dropdown-nav").toggleClass("open");
+        },50);
+  });
+
+
   </script>
 
 </body>

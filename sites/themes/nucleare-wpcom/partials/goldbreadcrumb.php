@@ -1,4 +1,6 @@
-
+<?php $terms = get_site_terms( get_current_blog_id() )[0]; ?>
+<?php $department = $terms ? $terms->name : NULL; ?>
+<?php $link = $terms ? $terms->description : NULL; ?>
           <div class="breadcrumb">
             <div class="wide-wrapper clearfix">
               <div class="breadcrumb-wrapper">
@@ -10,16 +12,20 @@
                   <h2 class="visuallyhidden">Breadcrumb navigation</h2>
                   <ul>
                     <li class="expanded">
-                      <a href="/departments/">Departments</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
+                      <a href="http://www.gold.ac.uk/departments/">Departments</a>
+                      <div class="touchButton"><span class="touchButton--plus"></span></div>
                     </li>
+
+                    <?php if ($department): ?>
                     <li class="expanded">
-                      <a href="/computing/">Psychology</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
+                      <a href="<?php echo $link; ?>"><?php echo $department; ?></a>
+                      <div class="touchButton"><span class="touchButton--plus"></span></div>
                     </li>
+                    <?php endif; ?>
+
                     <li class="expanded">
-                      <a href="/computing/research/">Forensic Psychology Blog</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
+                      <a href="#"><?php bloginfo( 'name' ); ?></a>
+                      <div class="touchButton"><span class="touchButton--plus"></span></div>
                     </li>
                   </ul>
                 </nav>
