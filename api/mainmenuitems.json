@@ -1,12 +1,12 @@
 [
-    { "url" : "/course-finder/",  "label" : "Course finder"         },
-    { "url" : "/study/",          "label" : "Study"                 },
-    { "url" : "/life-on-campus/", "label" : "Life on campus"        },
-    { "url" : "/departments/",    "label" : "Departments"           },
-    { "url" : "/research/",       "label" : "Research & enterprise" },
-    { "url" : "/alumni/",         "label" : "Alumni & friends"      },
-    { "url" : "/events/",         "label" : "Events"                },
-    { "url" : "/about/",          "label" : "About us"              },
-    { "url" : "/news/",           "label" : "News"                  }
+    { "url" : "http://gold.ac.uk/course-finder/",  "label" : "Course finder"         },
+    { "url" : "http://gold.ac.uk/study/",          "label" : "Study"                 },
+    { "url" : "http://gold.ac.uk/life-on-campus/", "label" : "Life on campus"        },
+    { "url" : "http://gold.ac.uk/departments/",    "label" : "Departments"           },
+    { "url" : "http://gold.ac.uk/research/",       "label" : "Research & enterprise" },
+    { "url" : "http://gold.ac.uk/alumni/",         "label" : "Alumni & friends"      },
+    { "url" : "http://gold.ac.uk/events/",         "label" : "Events"                },
+    { "url" : "http://gold.ac.uk/about/",          "label" : "About us"              },
+    { "url" : "http://gold.ac.uk/news/",           "label" : "News"                  }
 ]
 

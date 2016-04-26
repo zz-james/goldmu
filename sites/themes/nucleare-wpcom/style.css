@@ -407,8 +407,20 @@ aside {
     line-height: 6rem;
 }
 
+.header__charm--text {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
 
+.staff-students-nav li {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
 
+.primary-nav li {
+    font-size: 15px;
+    font-size: 1.5rem;
+}
 
 /*--------------------------------------------------------------
 4.0 Forms

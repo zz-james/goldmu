@@ -1,11 +1,11 @@
 [
-    { "url" : "/student/",                                              "label" : "Student Gold"                                    },
-    { "url" : "/library/",                                              "label" : "Library"                                         },
+    { "url" : "http://gold.ac.uk/student/",                                              "label" : "Student Gold"                                    },
+    { "url" : "http://gold.ac.uk/library/",                                              "label" : "Library"                                         },
     { "url" : "https://mytimetable.gold.ac.uk/SWS/2015-16/login.aspx",  "label" : "My timetable"                                    },
     { "url" : "https://learn.gold.ac.uk/",                              "label" : "Learn.gold"                                      },
     { "url" : "http://goldmail.gold.ac.uk/",                            "label" : "Goldmail"                                        },
-    { "url" : "/staff-directory/",                                      "label" : "Staff directory"                                 },
+    { "url" : "http://gold.ac.uk/staff-directory/",                                      "label" : "Staff directory"                                 },
     { "url" : "https://goldmine.gold.ac.uk/",                           "label" : "Goldmine - staff intranet"                       },
-    { "url" : "/talic/",                                                "label" : "Teaching and Learning Innovation Centre (TaLIC)" },
-    { "url" : "/calendar/?action=admin",                                "label" : "Events admin"                                    }
+    { "url" : "http://gold.ac.uk/talic/",                                                "label" : "Teaching and Learning Innovation Centre (TaLIC)" },
+    { "url" : "http://gold.ac.uk/calendar/?action=admin",                                "label" : "Events admin"                                    }
 ]
