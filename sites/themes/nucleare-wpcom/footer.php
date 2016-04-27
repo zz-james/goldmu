@@ -13,68 +13,34 @@
     </main><!-- #content -->
   </div><!-- close site-wrapper -->
 
-  <footer id="colophon" class="site-footer" role="contentinfo">
-    <div class="site-info small-part"></div>
-  </footer>
+ <footer role="contentinfo" class="footer-container">
+    <div class="wrapper">
+
+        <ul class="site-map site-map--footer">
+            <li><a href="http://gold.ac.uk/about">About us</a></li>
+            <li><a href="http://gold.ac.uk/accessibility/">Accessibility statement</a></li>
+            <li><a href="http://gold.ac.uk/disclaimer/">Copyright and Disclaimer</a></li>
+            <li><a href="http://gold.ac.uk/cookies-statement/">Cookie policy</a></li>
+            <li><a href="http://gold.ac.uk/contact/">Contact us</a></li>
+            <li><a href="http://gold.ac.uk/working/">Jobs</a></li>
+        </ul>
+
+        <ul class="social-hubs social-hubs--footer">
+            <li><a href="https://twitter.com/goldsmithsuol">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/edu/school?id=12593">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/GoldsmithsUoL/">Facebook</a></li>
+            <li><a href="https://instagram.com/goldsmithsuol/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/user/GoldsmithsLondon">YouTube</a></li>
+            <li><a href="https://vimeo.com/goldsmiths">Vimeo</a></li>
+        </ul>
+        <div class="footer__meta full-width">
+            <small class="footer__copyright">&copy; <script>document.write(new Date().getFullYear())</script>2016 Goldsmiths, University of London</small>
+            <a href="#top" class="footer__back-top">Back to top</a>
+        </div>
+    </div>
+</footer>
 
   <?php wp_footer(); ?>
-
-  <script>
-
-
-
-  jQuery(function(){
-
-
-    siteUIClosing = function() {
-      jQuery("body").addClass("site-ui-closing"),
-      setTimeout(function() {
-        jQuery("body").removeClass("site-ui-closing")
-      }, 1e3)
-    }
-
-    jQuery('.charm-menu').on("click", function() {
-      jQuery("body").toggleClass("menu-open");
-      jQuery("body").toggleClass("menu-closed");
-      jQuery("body").removeClass("staff-students-open");
-      jQuery("body").addClass("staff-students-closed");
-      jQuery("#student-nav").attr("aria-hidden", "true");
-
-      jQuery("body").hasClass("menu-closed") ?
-          ( jQuery("#primary-nav").attr("aria-hidden", "true"), siteUIClosing() ) : 
-          ( jQuery("body").hasClass("tabbing") && setTimeout(function() { jQuery("#primary-nav").find("li > a").eq(0).focus() }, 500), jQuery("#primary-nav").attr("aria-hidden", "false") )
-    });
-
-    jQuery(".dropdown-nav, .dropdown-nav touchButton").click(function(e)
-    {
-      jQuery(".breadcrumb-wrapper").toggleClass("active");
-
-      setTimeout(
-        function() {
-          jQuery(".dropdown-nav .touchButton").toggleClass("active");
-          jQuery(".breadcrumb .secondary-nav").toggleClass("open");
-          jQuery(".dropdown-nav").toggleClass("open");
-        },50);
-    });
-
-    jQuery(".header__charm--text").on("click", function() {
-
-      jQuery("body").toggleClass("staff-students-open"),
-      jQuery("body").toggleClass("staff-students-closed"),
-
-      jQuery("body").removeClass("menu-open"),  // if the regular menu is open, close it.
-      jQuery("body").addClass("menu-closed"),
-
-      jQuery("#primary-nav").attr("aria-hidden", "true"),
-
-      jQuery("body").hasClass("staff-students-closed") ?
-          ( jQuery("#student-nav").attr("aria-hidden", "true"), siteUIClosing() ) :
-          ( jQuery("body").hasClass("tabbing") && setTimeout( function() { jQuery("#student-nav").find("li > a").eq(0).focus() }, 500 ),jQuery("#student-nav").attr("aria-hidden", "false") );
-
-    });
-
-  });
-  </script>
 
 </body>
 </html>
