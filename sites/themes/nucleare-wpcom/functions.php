@@ -16,6 +16,16 @@ if ( ! function_exists( 'nucleare_setup' ) ) :
 function nucleare_setup() {
 
 	/*
+	 * make it so an image can be chosen as the hero for the theme
+	 */
+	$args = array(
+		'width'         => 980,
+		'height'        => 200,
+		'uploads'       => true,
+	);
+	add_theme_support( 'custom-header' , $args );
+
+	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on nucleare, use a find and replace

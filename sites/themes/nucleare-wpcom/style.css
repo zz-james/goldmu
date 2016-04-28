@@ -25,6 +25,7 @@ Text Domain: nucleare
 7.0 Alignments
 8.0 Clearings
 9.0 Widgets
+	9.1 Header / Hero image
 10.0 Content
 	10.1 Posts and pages
 	10.2 Post Formats
@@ -578,119 +579,7 @@ a:active,
 	max-width: 1140px;
 	margin: 0 auto;
 }
-.main-navigation {
-	display: block;
-	float: left;
-	max-width: 76%;
-}
-.main-navigation ul {
-	list-style: none;
-	margin: 0;
-}
-.main-navigation li {
-	display: inline-block;
-	position: relative;
-	background: #fff;
-}
-.main-navigation ul ul li {
-	box-shadow: 0 0 2px rgba(0,0,0,.05);
-}
-.main-navigation li a:not(:last-child):after {
-	content: "\f107";
-	font-family: FontAwesome;
-	margin: 0 0 0 5px;
-	font-size: 13px;
-}
-.main-navigation ul ul li a:not(:last-child):after {
-	content: "\f105";
-	margin: 2px 0 0 5px;
-	float: right;
-}
-.main-navigation a {
-	display: block;
-	text-decoration: none;
-	padding: 1.6em 1.125em;
-	font-size: 13px;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	transition: color .3s ease-in-out, background .3s ease-in-out;
-}
-.main-navigation ul ul {
-	float: left;
-	position: absolute;
-		top: 48px;
-		left: auto;
-	z-index: 99999;
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s linear 0.2s,opacity 0.2s linear, transform 0.2s linear;
-	-webkit-transform: translate3d(0,20px,0);
-			transform: translate3d(0,20px,0);
-}
-.main-navigation div > ul > li > ul {
-	padding-top: .8em;
-}
-.main-navigation div > ul > li > ul > li:first-child {
-	border-top: 2px solid #7fc7af;
-}
-.main-navigation div > ul > li > ul::before {
-	content: "";
-	position: absolute;
-		top: 2px;
-		left: 30px;
-	border-width: 5px 5px 8px;
-	border-color: transparent transparent #7fc7af;
-	border-style: solid;
-}
 
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-	visibility: hidden;
-	opacity: 0;
-	transition: visibility 0s linear 0.2s, opacity 0.2s linear, transform 0.2s linear;
-	-webkit-transform: translate3d(20px,0,0);
-			transform: translate3d(20px,0,0);
-}
-
-.main-navigation ul ul a {
-	width: 230px;
-	padding: .8em 1.6em;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li:focus > ul,
-.main-navigation ul li:active > ul,
-.main-navigation ul li.focus > ul {
-	visibility: visible;
-	opacity: 1;
-	transition-delay: 0s;
-	-webkit-transform: translate3d(0,0,0);
-	        transform: translate3d(0,0,0);
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li:focus > ul,
-.main-navigation ul ul li:active > ul,
-.main-navigation ul ul li.focus > ul  {
-	visibility: visible;
-	opacity: 1;
-	transition-delay: 0s;
-	-webkit-transform: translate3d(0,0,0);
-	        transform: translate3d(0,0,0);
-}
-
-.main-navigation ul li:hover > a,
-.main-navigation ul li.focus > a,
-.main-navigation li.current-menu-item > a,
-.main-navigation li.current-menu-parent > a,
-.main-navigation li.current-page-ancestor > a,
-.main-navigation .current_page_item > a,
-.main-navigation .current_page_parent > a {
-	background: rgba(0,0,0,.03);
-	color: #5e5e5e;
-}
 
 /* Small menu */
 .menu-toggle {
@@ -843,6 +732,48 @@ a:active,
 	padding-left: 1.6em;
 }
 
+#access {
+    background: -webkit-linear-gradient(#333, #333);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 auto 6px;
+    width: 100%;
+}
+
+#access div {
+    margin: 0 15%;
+}
+
+#access ul {
+    font-size: 13px;
+    list-style: none;
+    margin: 0 0 0 -0.8125em;
+    padding-left: 0;
+}
+
+#access li {
+    float: left;
+    position: relative;
+}
+
+#access a {
+    color: #eee;
+    display: block;
+    line-height: 3.333em;
+    padding: 0 1.2125em;
+    text-decoration: none;
+}
+
+.assistive-text, .screen-reader-text {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+}
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -1083,6 +1014,27 @@ a:active,
 .widget_archive li a,
 .widget_categories li a {
 	float: left;
+}
+
+/*--------------------------------------------------------------
+9.1 Header / Hero image
+--------------------------------------------------------------*/
+
+.hero--simple{
+	margin: 0px;
+	background-position: 0% 0%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-clip: border-box;
+	background-origin: padding-box;
+}
+
+.hero__heading {
+    text-shadow:
+    -1px -1px 0 rgba(0,0,0,.33),
+    1px -1px 0 rgba(0,0,0,.33),
+    -1px 1px 0 rgba(0,0,0,.33),
+    1px 1px 0 rgba(0,0,0,.33) !important;
 }
 
 /*--------------------------------------------------------------
