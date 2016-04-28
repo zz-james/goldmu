@@ -733,8 +733,7 @@ a:active,
 }
 
 #access {
-    background: -webkit-linear-gradient(#333, #333);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+    background: -webkit-linear-gradient(#eee, #eee);
     clear: both;
     display: block;
     float: left;
@@ -743,10 +742,12 @@ a:active,
 }
 
 #access div {
-    margin: 0 15%;
+    margin: 0;
+    text-align: center;
 }
 
 #access ul {
+	display: inline-block;
     font-size: 13px;
     list-style: none;
     margin: 0 0 0 -0.8125em;
@@ -759,7 +760,7 @@ a:active,
 }
 
 #access a {
-    color: #eee;
+    color: #000;
     display: block;
     line-height: 3.333em;
     padding: 0 1.2125em;
