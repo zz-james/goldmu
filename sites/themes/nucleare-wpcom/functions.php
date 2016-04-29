@@ -17,13 +17,20 @@ function nucleare_setup() {
 
 	/*
 	 * make it so an image can be chosen as the hero for the theme
+	 * and the hero text colour can be changed
 	 */
 	$args = array(
 		'width'         => 980,
 		'height'        => 200,
 		'uploads'       => true,
+		'default-text-color' => 'fff',
+		'header-text'        => true,
 	);
 	add_theme_support( 'custom-header' , $args );
+
+
+ 	register_nav_menu('blog-menu',__( 'Blog Menu' ));
+
 
 	/*
 	 * Make theme available for translation.

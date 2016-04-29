@@ -23,34 +23,11 @@
   <h3 class="assistive-text">Main menu</h3>
   <div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
   <div class="skip-link"><a class="assistive-text" href="#secondary">Skip to secondary content</a></div>
-  <div class="menu-menu-container">
-    <ul id="menu-menu" class="menu">
-      <li id="menu-item-776" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-776">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=106">News</a>
-      </li>
-      <li id="menu-item-775" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-775">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=105">Events</a>
-      </li>
-      <li id="menu-item-781" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-781">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=109">Publications</a>
-      </li>
-      <li id="menu-item-773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-773">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=108">Students</a>
-      </li>
-      <li id="menu-item-774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-774">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=107">Staff</a>
-      </li>
-      <li id="menu-item-779" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-779">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=74">Women in Computing</a>
-      </li>
-      <li id="menu-item-782" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-782">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=70">Careers</a>
-      </li>
-      <li id="menu-item-783" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-783">
-        <a href="http://www.doc.gold.ac.uk/blog/?cat=110">Inspiration</a>
-      </li>
-    </ul>
-  </div>
+  <?php
+  if (has_nav_menu('blog-menu')) :
+    wp_nav_menu(['theme_location' => 'blog-menu', 'menu_class' => 'menu', 'container_class' => 'menu-menu-container']);
+  endif;
+  ?>
 </nav>
 
 
