@@ -733,7 +733,7 @@ a:active,
 }
 
 #access {
-    background: -webkit-linear-gradient(#eee, #eee);
+    background: #eee;
     clear: both;
     display: block;
     float: left;
