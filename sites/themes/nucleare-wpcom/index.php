@@ -16,19 +16,16 @@
 
             	<!-- above this line is imported from gold -->
 
-
-
-
-<nav id="access" role="navigation">
-  <h3 class="assistive-text">Main menu</h3>
-  <div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
-  <div class="skip-link"><a class="assistive-text" href="#secondary">Skip to secondary content</a></div>
-  <?php
-  if (has_nav_menu('blog-menu')) :
-    wp_nav_menu(['theme_location' => 'blog-menu', 'menu_class' => 'menu', 'container_class' => 'menu-menu-container']);
-  endif;
-  ?>
-</nav>
+              <nav id="access" role="navigation">
+                <h3 class="assistive-text">Main menu</h3>
+                <div class="skip-link"><a class="assistive-text" href="#content">Skip to primary content</a></div>
+                <div class="skip-link"><a class="assistive-text" href="#secondary">Skip to secondary content</a></div>
+                <?php
+                if (has_nav_menu('blog-menu')) :
+                  wp_nav_menu(['theme_location' => 'blog-menu', 'menu_class' => 'menu', 'container_class' => 'menu-menu-container']);
+                endif;
+                ?>
+              </nav>
 
 
 							<div class="site-content">
