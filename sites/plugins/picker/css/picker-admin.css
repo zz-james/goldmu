@@ -1,0 +1,24 @@
+/* PICKER WIDGET ADMIN STYLES */
+
+.widget .widget-content {padding: 0 0 0 0}
+.widgets-sortables .widget.published.on {border: 2px solid green}
+.widgets-sortables .widget.published.off {border: 2px solid red}
+
+.widgets-sortables .widget select.articles {font-size: 11px}
+.widgets-sortables .widget .textarea_resizable {min-height: 45px !important}
+
+/* TIMEPICKER STYLES */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { float: left; clear:left; padding: 0 0 0 5px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 45%; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; padding: 0 5px 0 0; }
+.ui-timepicker-rtl dl dt{ float: right; clear: right; }
+.ui-timepicker-rtl dl dd { margin: 0 45% 10px 10px; }
+
+/* AUTOCOMPLETE STYLES */
+.ui-autocomplete.ui-menu .ui-menu-item a {font-size: 11px}

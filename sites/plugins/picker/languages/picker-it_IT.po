@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Picker\n"
+"POT-Creation-Date: 2015-01-05 14:28+0100\n"
+"PO-Revision-Date: 2015-01-05 14:28+0100\n"
+"Last-Translator: Andrea Landonio <landonio.andrea@gmail.com>\n"
+"Language-Team: Andrea Landonio <landonio.andrea@gmail.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: /var/www/dev/wordpress40/wp-content/plugins/picker\n"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/picker.php:76
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/picker.php:83
+msgid "Cheatin&#8217; huh?"
+msgstr "Cheatin&#8217; huh?"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:21
+msgid ""
+"Displays a single post, selected from a list or provided by ID, on site "
+"frontend."
+msgstr ""
+"Mostra un articolo, selezionato da una lista o inserito tramite ID, sul "
+"frontend del sito."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:23
+msgid "Picker"
+msgstr "Picker"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:41
+msgid "-"
+msgstr "-"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:53
+msgid "Select to publish the widget:"
+msgstr "Seleziona per pubblicare il widget:"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:60
+msgid "Temporary title"
+msgstr "Titolo temporaneo"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:61
+msgid "Widget title (not shown on frontend):"
+msgstr "Titolo (non mostrato sul frontend):"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:70
+msgid "Choose a post to display in the widget (order by latest posts):"
+msgstr ""
+"Seleziona l'articolo da visualizzare (ordinamento per data di pubblicazione):"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:77
+msgid "Force a post by ID or search it by keywords:"
+msgstr "Forza un articolo inserendo l'ID o cercandolo tramite keywords:"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:86
+msgid "Post visible from (format \"mm/dd/yyyy HH:mi\"):"
+msgstr "Articolo visibile dal (formato \"dd/mm/yyyy HH:mi\"):"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:95
+msgid "Post visible to (format \"mm/dd/yyyy HH:mi\"):"
+msgstr "Articolo visibile fino al (formato \"dd/mm/yyyy HH:mi\"):"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:104
+msgid "Alternative post URL:"
+msgstr "URL alternativo:"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:111
+msgid "Alternative post title:"
+msgstr "Titolo alternativo:"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/widgets/class-picker-widget-default.php:118
+msgid "Alternative post excerpt:"
+msgstr "Sommario alternativo:"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:75
+msgid "Picker settings"
+msgstr "Impostazioni picker"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:84
+msgid ""
+"In this page you can manage all plugin variables and configuration with the "
+"follow fields. If you leave blank settings fields Picker plugin provide "
+"these variables with a constant value."
+msgstr ""
+"In questa pagina puoi gestire tutte le variabili e le configurazioni del "
+"plugin attraverso i seguenti campi. Se i campi non verranno impostati il "
+"plugin provvederà ad utilizzare i valori preimpostati come defaults."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:85
+msgid "Note: Additional information about the plugin at"
+msgstr "Nota: Informazioni aggiuntivo sono disponibili al"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:85
+msgid "Plugin site"
+msgstr "Sito del plugin"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:85
+msgid "Picker plugin site"
+msgstr "Sito del plugin"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:93
+msgid "Save"
+msgstr "Salva"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:127
+msgid "General settings"
+msgstr "Impostazioni generali"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:129
+msgid "This section contains all generics configuration about the plugin."
+msgstr "Questa sezione contiene tutte le configurazioni generali del plugin."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:134
+msgid "Post list items"
+msgstr "Numero elementi nella lista articoli"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:146
+msgid ""
+"Sets the number of items shown in the post list field inside Picker widget."
+msgstr ""
+"Imposta il numero di elementi mostrati nella lista dei post selezionabili "
+"all'interno del widget."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:153
+msgid "Cache settings"
+msgstr "Impostazioni caching"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:155
+msgid ""
+"This section contains all the cache configuration about the plugin. You can "
+"enable data caching, choose the expiration times for transient data and "
+"define the behavior during plugin's deactivation. <br/>The plugin "
+"deactivation management is available only for WordPress versions equal or "
+"higher than 3.9."
+msgstr ""
+"Questa sezione contiene tutte le configurazioni sulla cache del plugin. E' "
+"possibile abilitare la cache sui dati, impostare un valore di scadenza dei "
+"dati salvati nella cache Transient e definire il comportamento del plugin in "
+"fase di disattivazione. <br/>La gestione della disattivazione del plugin è "
+"disponibile solo per versioni di WordPress uguali o superiri alla 3.9."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:160
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:163
+msgid "Enable cache"
+msgstr "Abilita cache"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:166
+msgid "Enable caching for plugin data"
+msgstr "Abilita la cache dei dati del plugin"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:169
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:184
+msgid "Select field if you want enable this feature."
+msgstr "Seleziona il campo se vuoi abilitare questa funzionalità."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:175
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:178
+msgid "Enable cache cleanup on plugin deactivation"
+msgstr "Pulisci la cache durante la disattivazione del plugin"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:181
+msgid "Clean up cache on plugin's deactivation "
+msgstr "Pulisci la cache durante la disattivazione del plugin"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:190
+msgid "Default cache expiration"
+msgstr "Scadenza cache (default)"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:194
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:195
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:196
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:213
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:214
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:215
+msgid "minutes"
+msgstr "minuti"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:197
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:216
+msgid "hour"
+msgstr "ore"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:198
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:199
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:200
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:217
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:218
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:219
+msgid "hours"
+msgstr "ore"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:201
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:220
+msgid "day"
+msgstr "giorno"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:204
+msgid "Set the cache expiration value for standard items."
+msgstr "Imposta il valore di scadenza della cache per gli elementi standard"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:209
+msgid "Scheduled items cache expiration"
+msgstr "Scadenza cache (elementi schedulati)"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:223
+msgid ""
+"Set the cache expiration value for scheduled items (widget items with a "
+"valid publish/expire time)."
+msgstr ""
+"Imposta il valore di scadenza della cache per gli elementi schedulati "
+"(elementi con una data di visualizzazione impostata)"
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:257
+msgid "Settings saved."
+msgstr "Impostazioni salvate."
+
+#: /var/www/dev/wordpress40/wp-content/plugins/picker/includes/admin/class-picker-admin.php:261
+msgid "Error"
+msgstr "Errore"
+
+#~ msgid "Enable plugin deactivation management"
+#~ msgstr "Abilita la gestione "
+
+#~ msgid "None"
+#~ msgstr "Nessuno"
