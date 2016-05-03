@@ -83,9 +83,6 @@ class WPCom_Theme_Updater {
 
 		$raw_response = wp_remote_post( 'http://public-api.wordpress.com/rest/v1/themes/update-check', $options );
 
-		print_r($raw_response);
-		exit(0);
-
 		// something went wrong. leave it alone.
 		if ( 200 !== wp_remote_retrieve_response_code( $raw_response ) )
 			return $update_data;
