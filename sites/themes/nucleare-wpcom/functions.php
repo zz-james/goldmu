@@ -56,9 +56,14 @@ function nucleare_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'nucleare-normal-post' , 810, 9999 );
+
 }
 endif; // nucleare_setup
 add_action( 'after_setup_theme', 'nucleare_setup' );
+
+
+
+
 
 /**
  * Register widget area.
@@ -112,6 +117,3 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-// updater for WordPress.com themes
-if ( is_admin() )
-	include dirname( __FILE__ ) . '/inc/updater.php';
