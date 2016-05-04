@@ -5,6 +5,24 @@
  * @package Nucleare Gold
  */
 
+/**
+ * returns true if on a login or register page
+ * @return boolean 
+ */
+function is_login_or_register() {
+	return in_array( $GLOBALS['pagenow'], array( 'wp-login.php', 'wp-register.php' ) );
+}
+
+// redirect for the home page
+add_action( 'init', 'wpse182623_redirect_home_page_only' );
+function wpse182623_redirect_home_page_only() {
+    if( get_current_blog_id() == 1 && !is_admin() && !is_login_or_register() ) {
+        wp_redirect( 'http://gold.ac.uk' );
+        exit;
+    }
+}
+
+
 if ( ! function_exists( 'nucleare_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -114,11 +132,11 @@ function theme_customize_register( $wp_customize ) {
 			)
 		)
 	));
-
-
-
 }
 add_action( 'customize_register', 'theme_customize_register' );
+
+
+
 
 
 /**
