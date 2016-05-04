@@ -62,7 +62,63 @@ endif; // nucleare_setup
 add_action( 'after_setup_theme', 'nucleare_setup' );
 
 
+/**
+ * add some custom things to the customizer
+ * @param [type] $wp_customize : object from the customiser
+ */
+function theme_customize_register( $wp_customize ) {
+  //All our sections, settings, and controls will be added here
 
+	$wp_customize->add_section("pi", array(
+		"title"    => __("Posting Info", "customizer_postinfo_sections"),
+		"priority" => 30,
+	));
+
+	$wp_customize->add_setting("show_date", array(
+		"default"   => "show",
+		"transport" => "refresh",
+	));
+
+	$wp_customize->add_setting("show_author", array(
+		"default"   => "show",
+		"transport" => "refresh",
+	));
+
+
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"show_date",
+		array(
+			"label"    => __("Show the post date", "customizer_postinfo_label"),
+			"section"  => "pi",
+			"settings" => "show_date",
+			"type"     => "radio",
+			"choices"  => array(
+				"show" => __("Show Post Dates"),
+				"hide" => __("Hide Post Dates")
+			)
+		)
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"show_author",
+		array(
+			"label"    => __("Show the author", "customizer_postauthor_label"),
+			"section"  => "pi",
+			"settings" => "show_author",
+			"type"     => "radio",
+			"choices"  => array(
+				"show" => __("Show Post Author"),
+				"hide" => __("Hide Post Author")
+			)
+		)
+	));
+
+
+
+}
+add_action( 'customize_register', 'theme_customize_register' );
 
 
 /**
