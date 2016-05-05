@@ -1,6 +1,10 @@
-<?php $terms = get_site_terms( get_current_blog_id() )[0]; ?>
-<?php $department = $terms ? $terms->name : NULL; ?>
-<?php $link = $terms ? $terms->description : NULL; ?>
+
+<?php $linktext = trim(get_theme_mod( "breadcrumb_link" )); ?>
+<?php $link = trim(get_theme_mod( "breadcrumb_href" )); ?>
+
+
+
+
           <div class="breadcrumb">
             <div class="wide-wrapper clearfix">
               <div class="breadcrumb-wrapper">
@@ -16,9 +20,9 @@
                       <div class="touchButton"><span class="touchButton--plus"></span></div>
                     </li>
 
-                    <?php if ($department): ?>
+                    <?php if ($linktext): ?>
                     <li class="expanded">
-                      <a href="<?php echo $link; ?>"><?php echo $department; ?></a>
+                      <a href="<?php echo $link; ?>"><?php echo $linktext; ?></a>
                       <div class="touchButton"><span class="touchButton--plus"></span></div>
                     </li>
                     <?php endif; ?>

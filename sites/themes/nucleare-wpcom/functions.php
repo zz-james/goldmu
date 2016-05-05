@@ -132,6 +132,46 @@ function theme_customize_register( $wp_customize ) {
 			)
 		)
 	));
+
+
+	$wp_customize->add_section("bc", array(
+		"title"    => __("Breadcrumb Link", "customizer_breadcrumblink_sections"),
+		"priority" => 500,
+	));
+
+	$wp_customize->add_setting("breadcrumb_link", array(
+		"default"   => "",
+		"transport" => "refresh",
+	));
+
+	$wp_customize->add_setting("breadcrumb_href", array(
+		"default"   => "",
+		"transport" => "refresh",
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"breadcrumb_link",
+		array(
+			"label"    => __("Breadcrumb Link Text", "customizer_breadcrumblink_label"),
+			"section"  => "bc",
+			"settings" => "breadcrumb_link",
+			"type" => "text",
+		)
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"breadcrumb_href",
+		array(
+			"label"    => __("Breadcrumb Link Address (start with http)", "customizer_breadcrumbhref_label"),
+			"section"  => "bc",
+			"settings" => "breadcrumb_href",
+			"type" => "text",
+		)
+	));
+
+
 }
 add_action( 'customize_register', 'theme_customize_register' );
 
