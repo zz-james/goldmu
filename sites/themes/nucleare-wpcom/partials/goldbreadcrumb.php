@@ -9,7 +9,7 @@
             <div class="wide-wrapper clearfix">
               <div class="breadcrumb-wrapper">
                 <div class="dropdown-nav">In this section
-                  <div class="touchButton"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
+                  <div class="touchButton touchButton--disabled"><span class="touchButton--plus"></span><span class="touchButton--minus"></span></div>
                 </div>
 
                 <nav class="secondary-nav" role="navigation">
@@ -17,19 +17,19 @@
                   <ul>
                     <li class="expanded">
                       <a href="http://www.gold.ac.uk/departments/">Departments</a>
-                      <div class="touchButton"><span class="touchButton--plus"></span></div>
+                      <div class="touchButton touchButton--disabled"><span class="touchButton--plus"></span></div>
                     </li>
 
                     <?php if ($linktext): ?>
                     <li class="expanded">
                       <a href="<?php echo $link; ?>"><?php echo $linktext; ?></a>
-                      <div class="touchButton"><span class="touchButton--plus"></span></div>
+                      <div class="touchButton touchButton--disabled"><span class="touchButton--plus"></span></div>
                     </li>
                     <?php endif; ?>
 
                     <li class="expanded">
                       <a href="#"><?php bloginfo( 'name' ); ?></a>
-                      <div class="touchButton"><span class="touchButton--plus"></span></div>
+                      <div class="touchButton touchButton--disabled"><span class="touchButton--plus"></span></div>
                     </li>
                   </ul>
                 </nav>
