@@ -10,7 +10,7 @@
  * @return boolean 
  */
 function is_login_or_register() {
-	return in_array( $GLOBALS['pagenow'], array( 'wp-login.php', 'wp-register.php' ) );
+	return in_array( $GLOBALS['pagenow'], array( 'wp-login.php', 'wp-register.php', 'wp-cron.php' ) );
 }
 
 // redirect for the home page
