@@ -19,7 +19,6 @@ function ViewMenuBuilder($el, props) {
     json.fail(function( jqxhr, textStatus, error ) {
         var err = textStatus + ", " + error;
         console.log( "Request Failed: " + err );
-        // do something
     });
   }
 
@@ -30,7 +29,7 @@ function ViewMenuBuilder($el, props) {
     data.forEach(function(link){
       htmlString += "<li> <a href='"+link.url+"'>"+link.label+"</a> </li>";
     });
-    $el.find('#loading').remove();
+    $el.find('.js-replace-values').remove();
     $el.append(htmlString);
   }
 
@@ -39,8 +38,13 @@ function ViewMenuBuilder($el, props) {
   return this;
 }
 
-var mainMenu  = new ViewMenuBuilder(jQuery('#main-menu') , {url:'/api/mainmenuitems.json'});
-var staffMenu = new ViewMenuBuilder(jQuery('#staff-menu'), {url:'/api/staffmenuitems.json'});
+var mainMenu  = new ViewMenuBuilder(jQuery('#main-menu') , {url:'http://www.gold.ac.uk/api/mainmenuitems/index.json'});
+var staffMenu = new ViewMenuBuilder(jQuery('#staff-menu'), {url:'http://www.gold.ac.uk/api/staffmenuitems/index.json'});
+
+
+
+/* ------------------------------------------------ */
+
 
 /**
  * the usual whole bunch of jQuery on load and set up event listners shizzle is here
