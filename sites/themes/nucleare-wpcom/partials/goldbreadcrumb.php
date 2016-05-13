@@ -28,7 +28,7 @@
                     <?php endif; ?>
 
                     <li class="expanded">
-                      <a href="#"><?php bloginfo( 'name' ); ?></a>
+                      <a href="<?php echo get_site_url(); ?>"><?php bloginfo( 'name' ); ?></a>
                       <div class="touchButton touchButton--disabled"><span class="touchButton--plus"></span></div>
                     </li>
                   </ul>
