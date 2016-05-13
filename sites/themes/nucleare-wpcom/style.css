@@ -579,7 +579,7 @@ textarea {
 a,
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #447677;
+	color: #555;
 	text-decoration: none;
 	transition: color .3s ease-in-out;
 }
@@ -591,6 +591,11 @@ a:active,
 }
 .entry-content a {
 	word-break: break-word;
+	text-decoration: underline;
+}
+
+#secondary a:hover {
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
