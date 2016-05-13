@@ -464,6 +464,11 @@ aside {
 	font-weight:bold;
 }
 
+#secondary #searchform input[type="submit"] {
+    background: rgb(192, 192, 192);
+    float: right;
+}
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
