@@ -1564,7 +1564,7 @@ a:active,
 .hentry,
 .page-header,
 .page-content {
-	margin: 0 0 3em;
+	margin: 0 0 1em;
 	background: #fff;
 	box-shadow: 0 0 2px rgba(0,0,0,.05);
 }
