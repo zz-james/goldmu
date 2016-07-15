@@ -469,6 +469,13 @@ aside {
     float: right;
 }
 
+/* comment form stuff */
+.comment-form-url{
+	display: none;
+}
+
+
+
 /*--------------------------------------------------------------
 4.0 Forms
 --------------------------------------------------------------*/
@@ -1729,7 +1736,7 @@ a:active,
 .comment-form label[for="email"],
 .comment-form label[for="url"],
 .comment-form label[for="comment"] {
-	width: 5%;
+	width: 10%;
 	position: relative;
 	display: inline-block;
 	font-size: 14px;
