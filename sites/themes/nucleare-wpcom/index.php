@@ -38,11 +38,14 @@
 											?>
 										<?php endwhile; ?>
 										<?php nucleare_paging_nav(); ?>
+                    <?php comments_template( '', true ); ?>
 									<?php else : ?>
 										<?php get_template_part( 'partials/content', 'none' ); ?>
 									<?php endif; ?>
 								</div><!-- #primary -->
 								<?php get_sidebar(); ?>
+
+
 							</div><!-- site-content -->
 
             	<!-- below this line is imported from gold -->
